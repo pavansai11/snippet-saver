@@ -1,0 +1,168 @@
+body {
+  width: 500px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(212, 212, 212, 0.842);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="button"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+#snippet {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#searchBar {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  flex: 1;
+}
+
+.fa-search {
+  padding: 10px;
+  background: #ddd;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.snippet {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+#snippetList {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.editSnippetBtn,
+.deleteSnippetBtn {
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:focus {
+    box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  }
+}
+
+.editSnippetBtn {
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border-color: #0077cc;
+
+  &:hover {
+    background-image: linear-gradient(#51a9ee, #147bcd);
+    border-color: #1482d0;
+  }
+
+  &:active {
+    background-image: linear-gradient(#3d94d9, #0067b9);
+    border-color: #006dbc;
+  }
+}
+
+.deleteSnippetBtn {
+  background-image: linear-gradient(#ec4242, #c90000);
+  border-color: #cc0000;
+
+  &:hover {
+    background-image: linear-gradient(#ee5151, #cd1414);
+    border-color: #d01414;
+  }
+
+  &:active {
+    background-image: linear-gradient(#d93d3d, #b90000);
+    border-color: #bc0000;
+  }
+
+  &:focus {
+    box-shadow: rgba(253, 131, 131, 0.5) 0 0 0 3px;
+  }
+}
+
+footer {
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snippet Saver</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Snippet Saver</h1>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search snippets..." /><i
+        class="fa fa-search"
+      ></i>
+    </div>
+    <div id="snippetList"></div>
+    <hr />
+    <input type="button" id="addSnippetBtn" value="Add New Snippet" />
+    <div id="snippet" style="display: none">
+      <form id="snippetForm">
+        <div class="row">
+          <div class="col-25">
+            <label for="snippetName">Snippet Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="snippetName"
+              name="snippetName"
+              placeholder="For eg.: dfs"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="snippetCode">Code</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="snippetCode"
+              name="snippetCode"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <input type="button" id="submitSnippetBtn" value="Submit" />
+        </div>
+        <input type="hidden" id="originalSnippetName" />
+      </form>
+    </div>
+    <footer>
+      <p>Made by <strong>Pavan Sai </strong> <i class="fa fa-smile-o"></i></p>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>
